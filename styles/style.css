@@ -1,0 +1,121 @@
+#page-home {
+  height: 100vh;
+  background: url('../icons/undraw_medicine_b-1-ol.svg') no-repeat;
+  background-position-y: center;
+  background-position-x: right;
+  background-size: 580px;
+  
+}
+#page-home .content {
+  width: 90%;
+  max-width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#page-home header {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+#page-home header a {
+  display: flex;
+  color: #ffffff;
+  font-weight: 700;
+  
+}
+#page-home header a span {
+  margin-right: 16px;
+  display: flex;
+  background-image: url('../assets/log-in.svg');
+  width: 20px;
+  height: 20px;
+
+}
+#page-home header img {
+  height: 80px;
+} 
+#page-home main {
+  max-width: 560px;
+  flex: 1;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#page-home main h1 {
+  font-size: 54px;
+  
+}
+#page-home main p {
+  font-size: 24px;
+  line-height: 38px;
+  margin-top: 24px;
+}
+#page-home main a {
+  width: 100%;
+  max-width: 360px;
+  height: 72px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  background-color: var(--primary-color);
+  transition: 1s;
+  color: white;
+  
+  
+}
+
+#page-home h3 {
+  font-size: 2rem;
+  margin-top: 1px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    font-family: 'Roboto', sans-serif;
+    background: #A3E1D4;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  .text{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    color: #f0f6f4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 300px;
+    font-size: 2em;
+    letter-spacing: 5px;
+    background: transparent;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+   
+  }
+
+a {
+    text-decoration: none;
+}
+h1 {
+    font-size: 30px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', sans-serif;;
+    color: #ffffff;
+}
+
+p {
+  font-family: 'Ubuntu', sans-serif;;
+  color: #4e4e4e;
+}
+
+
