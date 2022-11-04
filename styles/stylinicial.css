@@ -119,9 +119,22 @@ body {
 	background: url(../icons/health-healthcare-hospital-medic-medical-medicine-svgrepo-com.svg) no-repeat;
 }
 
-.rodapePrincipal {
-	background-color: #A3E1D4;
-	padding-top: 20px;
+.footer {
+    background: var(--bg-header-e-footer);
+    text-align: center;
+    color: var(--header-e-footer);
+    padding: 10px;
+    box-shadow: 0px -3px 5px rgb(57 63 72 / 30%);
+    -webkit-box-shadow: 0 -3px 5px rgba(57, 63, 72, 0.3);
+    -moz-box-shadow: 0 -3px 5px rgba(57, 63, 72, 0.3); 
+    z-index: 2;
+}
+
+#texto-footer {
+    padding: 5px;
+    font-family: var(--fonte-principal);
+    font-size: 0.9em;
+    font-weight: bold;
 }
 
 
