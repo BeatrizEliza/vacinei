@@ -1,0 +1,118 @@
+body {
+	background-color: #F2F5F7;
+	font-family: 'Open Sans',Arial,sans-serif;
+}
+
+.logo {
+    height: 80px;
+  } 
+
+.container {
+	width: 84%;
+	margin: 0 auto;
+}
+
+.cabecalhoPrincipal {
+	background-color: #FFF;
+	padding: 5px 0;
+}
+/*PARTE DE FLEXBOX CABEÇALHO*/
+.cabecalhoPrincipal .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.cabecalhoPrincipal nav {
+	display: flex;
+}
+/*FIM DA PARTE DE FLEXBOX CABEÇALHO*/
+.cabecalhoPrincipal-titulo {
+	font-weight: bold;
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+.cabecalhoPrincipal-titulo a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.cabecalhoPrincipal-nav-link {
+	padding: 10px;
+	margin-bottom: 10px;
+	color: #9799A6;
+	background-color: #FFF;
+	text-decoration: none;
+	transition: .5s;
+	display: block;
+	border-bottom: 1px solid #9799A6;
+}
+
+.conteudoPrincipal {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.subtitulo {
+	font-weight: bold;
+	font-size: 32px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px dashed black;
+    border-radius: 10px;
+}
+.produtos li:hover{
+    border-color: #A3E1D4;
+}
+.produtos li:active{
+    border-color: #53f0ce;
+}
+.produtos li:hover h2{
+    font-size: 34px;
+}
+.produtos h3{
+    font-size: 25px;
+    font-weight: bold;
+}
+.servico {
+    font-size: 18px;
+}
+.preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}/* css do CONTATO*/
+
+.footer {
+    background: var(--bg-header-e-footer);
+    text-align: center;
+    color: var(--header-e-footer);
+    padding: 10px;
+    box-shadow: 0px -3px 5px rgb(57 63 72 / 30%);
+    -webkit-box-shadow: 0 -3px 5px rgba(57, 63, 72, 0.3);
+    -moz-box-shadow: 0 -3px 5px rgba(57, 63, 72, 0.3); 
+    z-index: 2;
+}
+
+#texto-footer {
+    padding: 5px;
+    font-family: var(--fonte-principal);
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+
