@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --fonte-cabecalho: 'Cookie', cursiva;
+    --fonte-principal: 'Roboto', sans-serif;
+    --nomes-hover: #161918;
+    --bg-header-e-footer: #fff;
+    --header-e-footer: rgb(0, 0, 0);
+    --button: #A3E1D4;
+    --button-active: #53f0ce;
+    --cor-da-fonte: rgb(0, 0, 0); 
+    --button-hover: #fff; 
+    --main: rgb(238, 238, 238);
+    --cor-do-item: #A3E1D4;
+    --cor-do-blur: #8b8b8b;
+    --blur-fonte: #b9b9b9;
+}
+
+.logo {
+    height: 80px;
+  } 
+
+.container {
+	width: 84%;
+	margin: 0 auto;
+}
+.cabecalhoPrincipal {
+	background-color: #FFF;
+	padding: 5px 0;
+}
+/*PARTE DE FLEXBOX CABEÇALHO*/
+.cabecalhoPrincipal .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.cabecalhoPrincipal nav {
+	display: flex;
+}
+
+.cabecalhoPrincipal-nav-link {
+	padding: 10px;
+	margin-bottom: 10px;
+	color: #9799A6;
+	background-color: #FFF;
+	text-decoration: none;
+	transition: .5s;
+	display: block;
+	border-bottom: 1px solid #9799A6;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3); 
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    z-index: 2;
+}
+
+h1 {
+    margin-left: 0.2em;
+}
+
+.botao-de-sugestao {
+    justify-self: end;
+}
+
+.botao-de-sugestao > button {
+    border: none;
+    border-radius: 1em;
+    padding: 1.2em;  
+    margin: 1.5em;
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    color: var(--cor-da-fonte);
+    background-color: var(--button);
+} 
+
+.botao-de-sugestao > button:hover {
+    cursor: pointer;
+    background-color: var(--button-hover);
+    color: var(--header-e-footer);
+}
+
+main {
+    font-family: var(--fonte-principal);
+    color: var(--cor-da-fonte);
+    background-color: var(--main);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex: 1;
+    z-index: 1;
+}
+
+.principal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buscar {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.input {
+    border-radius: 5px;
+    width: 15em;
+    height: 3em;
+    padding-left: 1em;
+    border-style: none;
+    box-shadow: 0.5px 0.5px 2px var(--cor-do-blur);
+}
+
+.input::placeholder {
+    font-weight: bold;
+    font-family: var(--fonte-principal);
+}
+
+.botao-buscar {
+    border-radius: 5px;
+    width: 10em;
+    height: 3.1em;
+    border-style: none;
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    background-color: var(--button);
+    color: var(--cor-da-fonte);
+    cursor: pointer;
+    box-shadow: 0.5px 0.5px 2px var(--cor-do-blur);
+}
+
+.botao-buscar:active {
+    background-color: var(--button-active);
+    color: var(--cor-da-fonte);
+}
+
+img {
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.item1, .item2, .item3, .item4 {
+    margin-top: 35px;
+    display: flex;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 1px 1px 5px var(--cor-do-blur);
+    width: 50%;
+    background-color: var(--cor-do-item);
+}
+
+.item1:hover, .item2:hover, .item3:hover, .item4:hover {
+    transform: scale(1.05); /*propriedade de transformação da escala para aumentar a escala do elemento em transição.*/
+    transition: 500ms linear; /*a propriedade transition, ela fará o elemento se mover mais suavemente. 500ms: a duração da transição é em milissegundos
+    linear: a função de tempo*/ 
+}
+
+.lista {
+    margin-left: 8%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-da-fonte);
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--nomes-hover);
+    cursor: pointer;
+}
+
+.footer {
+    background: var(--bg-header-e-footer);
+    text-align: center;
+    color: var(--header-e-footer);
+    padding: 10px;
+    box-shadow: 0px -3px 5px rgb(57 63 72 / 30%);
+    -webkit-box-shadow: 0 -3px 5px rgba(57, 63, 72, 0.3);
+    -moz-box-shadow: 0 -3px 5px rgba(57, 63, 72, 0.3); 
+    z-index: 2;
+}
+
+#texto-footer {
+    padding: 5px;
+    font-family: var(--fonte-principal);
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+p > em:hover {
+    font-size: 1.2em;
+}
+
+.icones-sociais {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+
+.icons {
+    height: 20px;
+    width: 20px;
+    color: var(--cor-da-fonte);
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    h1 {
+        font-size: 1em;
+    }
+
+    .botao-de-sugestao > button {
+        padding: 0.5rem;
+    }
+
+    .buscar {
+        /* width: 100vw; */
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .input {
+        width: 15rem;
+        margin: 0.5rem;
+        height: 2.5rem;
+    }
+
+    .botao-buscar {
+        width: 5em;
+        height: 2.5rem;
+    }
+
+    .item1 {
+        margin-top: 1rem;
+    }
+    
+    .item1, .item2, .item3, .item4 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 50vw;
+    }
+
+    img {
+        width: 50vw;
+        height: auto;
+    }
+
+    .lista {
+        margin-right: 1em;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 800px){
+    h1 {
+        font-size: 1.3em;
+    }
+
+    .botao-de-sugestao {
+        height: 2.4em;
+        padding-bottom: 0.5em;
+    }
+
+    .buscar {
+        width: 100vw;
+    }
+
+    .input {
+        margin-bottom: 1rem;
+    }
+
+    .item1 {
+        margin-top: 1rem;
+    }
+
+    .item1, .item2, .item3, .item4 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    img {
+        width: 50vw;
+        height: auto;
+    }
+
+    .lista {
+        margin-right: 1.2em;
+    }
+}
